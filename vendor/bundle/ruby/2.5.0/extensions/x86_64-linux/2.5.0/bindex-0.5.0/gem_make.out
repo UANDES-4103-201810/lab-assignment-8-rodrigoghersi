@@ -1,0 +1,15 @@
+current directory: /home/rodrigo/Desktop/lab-assignment-8-rodrigoghersi/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/home/rodrigo/.rvm/rubies/ruby-2.5.0/bin/ruby -r ./siteconf20180508-26630-1vi98me.rb extconf.rb
+creating Makefile
+
+current directory: /home/rodrigo/Desktop/lab-assignment-8-rodrigoghersi/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/rodrigo/Desktop/lab-assignment-8-rodrigoghersi/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/rodrigo/Desktop/lab-assignment-8-rodrigoghersi/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -m 0755 cruby.so ./.gem.20180508-26630-1btc8f4/bindex
