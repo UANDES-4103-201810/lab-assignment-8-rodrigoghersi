@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>Courseproject</title>
+    <title>Lab 8</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,22 +11,46 @@
 
   <body>
     <%= yield %>
+        </nav>
+
     <div class="container-fluid">
       <div class="row">
         <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
           <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
 <li class="nav-item">
               <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item">
               <a class="nav-link active" href="/users">Users<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/products">Products</a>
             </li>
           </ul>
+    
+        <th></th>
+	<th></th>
         </nav>
-</div>
+    <div class="container">
+	<h1>Listing Users</h1>
+		<table class="table table-condensed">
+		  <tr>
+		    <th>Name</th>
+		    <th>Last_name</th>
+		    <th>Username</th>
+		    <th></th>
+		    <th></th>
+		  </tr>
+
+  <% @user.each do |user| %>
+    <tr>
+      <td><%= user.first_name %></td>
+      <td><%= user.last_name %></td>
+      <td><%= user.username %></td>
+    </tr>
+    <% end %>
+</table>
+<br />
 </div>
   </body>
 </html>
